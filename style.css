@@ -8,7 +8,7 @@
 
 /* sidans utseende */
 html{
-    font-size: 62.5%;
+    font-size: 50%;
 }
 body{
     color: var(--text);
@@ -27,6 +27,7 @@ body{
 
 /* header */
 header{
+    border-bottom: 0.2rem solid var(--detail);
 
 }
 header h1{
@@ -36,34 +37,74 @@ header h1{
 }
 header nav{
     margin: auto;
-    width: 30rem;
+    width: 35rem;
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
 header nav a{
     background-color: var(--main);
     text-decoration: none;
     color: var(--text);
-    padding: 0.5rem;
+    padding: 1.5rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+
+header h2{
+    width: 35rem;
+    margin: auto;
+    padding: 1rem;
     font-size: 2rem;
 }
 
 /* main */
 main{
-
 }
 main p{
     background-color: var(--secondary);
+    font-size: 1.5rem;
+    padding: 1rem;
 }
 main img {
-    width: 50%;
+    width: 30rem;
+    margin: auto;
+    display: block;
+    padding: 1rem;
+    background-color: var(--main);
+    border-radius: 1rem;
+    margin-bottom: 2rem;
 } 
 /* footer */
 footer{
 
 }
-footer a{
+footer h3{
+    border-bottom: 0.2rem solid var(--detail);
+    font-size: 2rem;
+}
+footer .lankar{
+    padding-bottom: 1rem;
+    border-bottom: 0.2rem solid var(--detail);
+}
+footer .lankar a{
+    display: block;
+    width: 100%;
+    padding: 0.2rem;
+    font-size: 2rem;
+    color: var(--text);
+}
 
+footer button{
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    width: 25rem;
+    height: 5rem;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+    background-color: var(--main);
+    margin-bottom: 3rem;
 }
