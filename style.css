@@ -1,23 +1,29 @@
-:root{
-    --main: #23242a
-    --secondary: #1e1e21dc;
-    --detail: #e9e9e9;
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* färger kontrolleras av script.js */
+:root {
+    --main: #fff;
+    --secondary: #fff;
+    --detail: #fff;
     --text: #fff;
- 
 }
 
 /* sidans utseende */
-html{
+html {
     font-size: 50%;
 }
-body{
+
+body {
     color: var(--text);
     background-image: url(./bilder/elden-ring-cover.avif);
     height: 100%;
     background-position: top;
     background-size: cover;
+
+    font-family: "Roboto", sans-serif;
 }
-.kontainer{
+
+.kontainer {
     width: 35rem;
     margin: auto;
     background-color: var(--secondary);
@@ -26,16 +32,21 @@ body{
 }
 
 /* header */
-header{
+header {
     border-bottom: 0.2rem solid var(--detail);
 
 }
-header h1{
+
+header h1 {
     margin: auto;
-    width: 25rem;
-    font-size: 4rem;
+    width: 35rem;
+    font-size: 5rem;
+    text-align: center;
+
+    font-family: "Cinzel Decorative", serif;
 }
-header nav{
+
+header nav {
     margin: auto;
     width: 35rem;
     display: flex;
@@ -43,7 +54,7 @@ header nav{
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
-header nav a{
+header nav a {
     background-color: var(--main);
     text-decoration: none;
     color: var(--text);
@@ -52,7 +63,7 @@ header nav a{
     border-radius: 1rem;
 }
 
-header h2{
+header h2 {
     width: 35rem;
     margin: auto;
     padding: 1rem;
@@ -60,13 +71,14 @@ header h2{
 }
 
 /* main */
-main{
-}
-main p{
+main {}
+
+main p {
     background-color: var(--secondary);
     font-size: 1.5rem;
     padding: 1rem;
 }
+
 main img {
     width: 30rem;
     margin: auto;
@@ -75,20 +87,22 @@ main img {
     background-color: var(--main);
     border-radius: 1rem;
     margin-bottom: 2rem;
-} 
-/* footer */
-footer{
-
 }
-footer h3{
+
+/* footer */
+footer {}
+
+footer h3 {
     border-bottom: 0.2rem solid var(--detail);
     font-size: 2rem;
 }
-footer .lankar{
+
+footer .lankar {
     padding-bottom: 1rem;
     border-bottom: 0.2rem solid var(--detail);
 }
-footer .lankar a{
+
+footer .lankar a {
     display: block;
     width: 100%;
     padding: 0.2rem;
@@ -96,7 +110,7 @@ footer .lankar a{
     color: var(--text);
 }
 
-footer button{
+footer button {
     margin: auto;
     margin-top: 2rem;
     display: flex;
