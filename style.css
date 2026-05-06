@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* färger kontrolleras av script.js */
+/* färger hanteras av script.js */
 :root {
     --main: #fff;
     --secondary: #fff;
@@ -15,12 +15,12 @@ html {
 
 body {
     color: var(--text);
-    background-image: url(./bilder/elden-ring-cover.avif);
     height: 100%;
     background-position: top;
     background-size: cover;
-
+    background-attachment: fixed;
     font-family: "Roboto", sans-serif;
+    background-image: url(./bilder/elden-ring-cover.avif);
 }
 
 .kontainer {
@@ -34,15 +34,13 @@ body {
 /* header */
 header {
     border-bottom: 0.2rem solid var(--detail);
-
 }
 
 header h1 {
     margin: auto;
     width: 35rem;
-    font-size: 5rem;
+    font-size: 3.5rem;
     text-align: center;
-
     font-family: "Cinzel Decorative", serif;
 }
 
@@ -61,13 +59,24 @@ header nav a {
     padding: 1.5rem;
     font-size: 2rem;
     border-radius: 1rem;
+    box-shadow: 0.15rem 0.15rem 0.2rem var(--detail);
+    border: 0.1rem solid var(--detail);
 }
+
+header nav .aktiv{
+    box-shadow: 0rem 0rem 0rem #fff;
+}
+header nav a:hover{
+    box-shadow: 0rem 0rem 0rem #fff;
+}
+
 
 header h2 {
     width: 35rem;
     margin: auto;
     padding: 1rem;
     font-size: 2rem;
+    text-align: center;
 }
 
 /* main */
@@ -80,7 +89,7 @@ main p {
 }
 
 main img {
-    width: 30rem;
+    width: 95%;
     margin: auto;
     display: block;
     padding: 1rem;
@@ -88,6 +97,19 @@ main img {
     border-radius: 1rem;
     margin-bottom: 2rem;
 }
+
+main .boxes .box{
+    border-top: 0.2rem solid var(--detail);
+}
+
+main .boxes .box h3{
+    font-size: 2rem;
+}
+
+main .boxes .box p{
+    
+}
+
 
 /* footer */
 footer {}
@@ -98,16 +120,17 @@ footer h3 {
 }
 
 footer .lankar {
-    padding-bottom: 1rem;
     border-bottom: 0.2rem solid var(--detail);
+    border-radius: 0.2rem;
 }
 
 footer .lankar a {
     display: block;
     width: 100%;
     padding: 0.2rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--text);
+    margin-bottom: 0.2rem;
 }
 
 footer button {
@@ -121,4 +144,25 @@ footer button {
     color: var(--text);
     background-color: var(--main);
     margin-bottom: 3rem;
+}
+
+/* Media */
+@media (min-width: 767px){
+    html{
+        font-size: 60%;
+    }
+    .kontainer {
+        width: 50rem;
+    }
+}
+
+@media (min-width: 1024px){
+    html{
+        font-size: 70%;
+    }
+}
+@media (min-width: 1440px){
+    html{
+        font-size: 100%;
+    }
 }

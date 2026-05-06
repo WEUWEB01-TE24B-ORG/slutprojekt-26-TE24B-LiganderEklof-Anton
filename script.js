@@ -1,6 +1,6 @@
 const lightColors = {
     '--main': '#f4f4f4',
-    '--secondary': '#f5f5f5dc',
+    '--secondary': '#f5f5f5a7',
     '--detail': '#1f1c1c',
     '--text': '#000000',
 }

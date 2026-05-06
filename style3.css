@@ -1,0 +1,10 @@
+@media (min-width: 767px){
+    main .boxes .box{
+        width: 45%;
+        display: block;
+    }
+    main .boxes{
+        display: flex;
+        grid-template-columns: 1fr 1fr;
+    }
+}

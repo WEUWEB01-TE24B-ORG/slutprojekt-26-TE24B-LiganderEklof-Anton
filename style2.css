@@ -1,0 +1,32 @@
+@media (min-width: 767px){
+    main{
+        
+    }
+    main p {
+
+    }
+    main .bilder {
+        display: flex;
+    }
+    main .bilder img{
+        width: 45%;
+    }
+}
+@media (min-width: 1024px){
+    main{
+        grid-template-columns: 1fr 1fr;
+        display: flex;
+    }
+    main p {
+        width: 45%;
+        margin: auto;
+    }
+    main .bilder {
+        width: 45%;
+        margin: auto;
+        display: block;
+    }
+        main .bilder img{
+        width: 100%;
+    }
+}
