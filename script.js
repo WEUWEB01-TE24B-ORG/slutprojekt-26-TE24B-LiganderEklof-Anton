@@ -19,7 +19,7 @@ function applyColors(dict) {
 function applyCurrentTheme(){
     if (localStorage.getItem("theme") == "light") {
         applyColors(darkColors)
-        document.body.style.backgroundImage = 'url(./bilder/elden-ring-cover.avif)'
+        document.body.style.backgroundImage = 'url(./bilder/elden-ring-cover.webp)'
     }
     else if ((localStorage.getItem("theme") == "dark")){
         applyColors(lightColors)
