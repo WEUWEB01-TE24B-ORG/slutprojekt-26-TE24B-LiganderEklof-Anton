@@ -88,7 +88,7 @@ main {
 
 main p {
     background-color: var(--main);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 1rem;
 }
 
@@ -123,18 +123,20 @@ footer h3 {
     font-size: 2rem;
 }
 
-footer .lankar {
-    border-bottom: 0.2rem solid var(--detail);
-    border-radius: 0.2rem;
-}
 
-footer .lankar a {
+
+footer p  {
+    margin: auto;
     display: block;
     width: 100%;
     padding: 0.2rem;
     font-size: 1.5rem;
     color: var(--text);
     margin-bottom: 0.2rem;
+    text-align: center;
+}
+footer p a{
+    color: var(--text);
 }
 
 footer button {
