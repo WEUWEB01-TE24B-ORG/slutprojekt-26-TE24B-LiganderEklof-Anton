@@ -57,7 +57,7 @@ header nav a {
     background-color: var(--main);
     text-decoration: none;
     color: var(--text);
-    padding: 1.5rem;
+    padding: 1rem;
     font-size: 2rem;
     border-radius: 1rem;
     box-shadow: 0.15rem 0.15rem 0.2rem var(--detail);
@@ -114,9 +114,6 @@ main .boxes .box h3 {
 main .boxes .box p {
     font-size: 1.2rem;
 }
-
-main .boxes .box br {}
-
 
 /* footer */
 footer {}
