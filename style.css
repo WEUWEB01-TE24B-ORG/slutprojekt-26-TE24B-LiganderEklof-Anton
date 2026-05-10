@@ -14,13 +14,13 @@ html {
 }
 
 body {
+    /* bakgrund hanteras av script.js */
     color: var(--text);
     height: 100%;
     background-position: top;
     background-size: cover;
     background-attachment: fixed;
     font-family: "Roboto", sans-serif;
-    background-image: url(./bilder/elden-ring-cover.avif);
 }
 
 .kontainer {
@@ -63,10 +63,11 @@ header nav a {
     border: 0.1rem solid var(--detail);
 }
 
-header nav .aktiv{
+header nav .aktiv {
     box-shadow: 0rem 0rem 0rem #fff;
 }
-header nav a:hover{
+
+header nav a:hover {
     box-shadow: 0rem 0rem 0rem #fff;
 }
 
@@ -98,16 +99,21 @@ main img {
     margin-bottom: 2rem;
 }
 
-main .boxes .box{
+main .boxes .box {
     border-top: 0.2rem solid var(--detail);
 }
 
-main .boxes .box h3{
+main .boxes .box h3 {
     font-size: 2rem;
+    padding: 0.1rem;
 }
 
-main .boxes .box p{
-    
+main .boxes .box p {
+    font-size: 1.2rem;
+}
+
+main .boxes .box br {
+
 }
 
 
@@ -147,22 +153,24 @@ footer button {
 }
 
 /* Media */
-@media (min-width: 767px){
-    html{
+@media (min-width: 767px) {
+    html {
         font-size: 60%;
     }
+
     .kontainer {
         width: 50rem;
     }
 }
 
-@media (min-width: 1024px){
-    html{
+@media (min-width: 1024px) {
+    html {
         font-size: 70%;
     }
 }
-@media (min-width: 1440px){
-    html{
+
+@media (min-width: 1440px) {
+    html {
         font-size: 100%;
     }
 }

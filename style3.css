@@ -1,10 +1,11 @@
 @media (min-width: 767px){
-    main .boxes .box{
-        width: 45%;
-        display: block;
-    }
     main .boxes{
-        display: flex;
+        display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    main .boxes .box{
+        width: 95%;
+        margin: auto;
     }
 }
