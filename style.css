@@ -34,6 +34,7 @@ body {
 /* header */
 header {
     border-bottom: 0.2rem solid var(--detail);
+    margin-bottom: 1rem;
 }
 
 header h1 {
@@ -81,7 +82,9 @@ header h2 {
 }
 
 /* main */
-main {}
+main {
+    border-bottom: 0.2rem solid var(--detail);
+}
 
 main p {
     background-color: var(--secondary);
@@ -112,9 +115,7 @@ main .boxes .box p {
     font-size: 1.2rem;
 }
 
-main .boxes .box br {
-
-}
+main .boxes .box br {}
 
 
 /* footer */
