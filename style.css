@@ -155,7 +155,7 @@ footer button {
 /* Media */
 @media (min-width: 767px) {
     html {
-        font-size: 60%;
+        font-size: 80%;
     }
 
     .kontainer {
